@@ -1,0 +1,30 @@
+"#candidateWrap": {
+  width: Ti.UI.FILL,
+  height: Ti.UI.SIZE,
+  top: "6dp",
+  right: "11dp",
+  bottom: "6dp",
+  left: "11dp",
+  layout: "horizontal"
+}
+".candidateText": {
+  width: Ti.UI.FILL,
+  height: Ti.UI.SIZE,
+  textAlign: "left"
+}
+"#name": {
+  font: {
+    fontSize: "18sp",
+    fontWeight: "bold"
+  }
+}
+"#sex": {
+  font: {
+    fontSize: "14sp"
+  }
+}
+"#created": {
+  font: {
+    fontSize: "14sp"
+  }
+}

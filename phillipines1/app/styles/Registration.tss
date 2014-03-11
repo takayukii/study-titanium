@@ -1,0 +1,26 @@
+"Label": {
+  font: {
+    fontSize: "16sp",
+    fontWeight: "bold"
+  },
+  textAlign: "left",
+  color: "#333333",
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  top: "11dp",
+  bottom: "11dp",
+  left: "11dp",
+  right: "11dp"
+}
+"Label[platform=android]": {
+  color: "#FFFFFF"
+}
+"TextField": {
+  width: Ti.UI.FILL,
+}
+"Picker": {
+	width: Ti.UI.FILL,
+}
+"Button": {
+	width: Ti.UI.FILL,
+}

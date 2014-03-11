@@ -1,0 +1,13 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="Registration" icon="KS_nav_ui.png">
+			<Require type="view" src="Registration" />
+		</Tab>
+		<Tab title="List" icon="KS_nav_views.png">
+			<Require type="view" src="List" />
+		</Tab>
+		<Tab title="Misc" icon="KS_nav_views.png">
+			<Require type="view" src="Misc" />
+		</Tab>
+	</TabGroup>
+</Alloy>

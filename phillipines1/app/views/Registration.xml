@@ -1,0 +1,117 @@
+<Alloy>
+	<Window id="registrationWindow" title="Registration" tabBarHidden="true">
+		<ScrollView id="registrationWrap" layout="vertical">
+			<Label>Name</Label>
+			<Label>First</Label>
+			<TextField id="first_name" />
+			<Label>Last</Label>
+			<TextField id="last_name" />
+			<Label>Middle</Label>
+			<TextField id="middle_name" />
+			<Label>Age</Label>
+			<TextField id="age" />
+			<Label>Sex</Label>
+			<Picker id="sex">
+				<PickerColumn id="column1">
+	                <PickerRow title="Male" />
+	                <PickerRow title="Female" />
+	            </PickerColumn>
+			</Picker>
+			<Label>Employment Status</Label>
+			<Picker id="employment_status">
+				<PickerColumn id="column1">
+	                <PickerRow title="Employed"/>
+	                <PickerRow title="Unemployed"/>
+	                <PickerRow title="Self-employed"/>
+	            </PickerColumn>
+			</Picker>
+			<Label>Address</Label>
+			<TextField id="address" />
+			<Label>Mobile Phone Number</Label>
+			<TextField id="mobile_phone_number" />
+			<Label>Education Attainment</Label>
+			<Label>Level</Label>
+			<Picker id="level">
+				<PickerColumn id="column1">
+	                <PickerRow title="Elementary Grad."/>
+	                <PickerRow title="Elementary Undergrad."/>
+	                <PickerRow title="High School Grad."/>
+	                <PickerRow title="High School Undergrad."/>
+	                <PickerRow title="Vocational Grad."/>
+	                <PickerRow title="Vocational Undergrad."/>
+	                <PickerRow title="College Grad."/>
+	                <PickerRow title="College Undergrad."/>
+	            </PickerColumn>
+			</Picker>
+			<Label>Course</Label>
+			<Picker id="course">
+				<PickerColumn id="column1">
+	                <PickerRow title="Employed"/>
+	                <PickerRow title="Unemployed"/>
+	                <PickerRow title="Self-employed"/>
+	                <PickerRow title="Employed"/>
+	                <PickerRow title="Unemployed"/>
+	                <PickerRow title="Self-employed"/>
+	                <PickerRow title="Employed"/>
+	                <PickerRow title="Unemployed"/>
+	                <PickerRow title="Self-employed"/>
+	                <PickerRow title="Employed"/>
+	                <PickerRow title="Unemployed"/>
+	                <PickerRow title="Self-employed"/>
+	                <PickerRow title="Employed"/>
+	                <PickerRow title="Unemployed"/>
+	                <PickerRow title="Self-employed"/>
+	                <PickerRow title="Employed"/>
+	                <PickerRow title="Unemployed"/>
+	                <PickerRow title="Self-employed"/>
+	                <PickerRow title="Employed"/>
+	                <PickerRow title="Unemployed"/>
+	                <PickerRow title="Self-employed"/>
+	                <PickerRow title="Employed"/>
+	                <PickerRow title="Unemployed"/>
+	                <PickerRow title="Self-employed"/>
+	            </PickerColumn>
+			</Picker>
+			<Label>Work Experience</Label>
+			<Label>Job 1</Label>
+			<Label>Position</Label>
+			<TextField id="job1_position" />
+			<Label>Period - Years</Label>
+			<Picker id="job1_years">
+				<PickerColumn id="column1">
+	                <PickerRow title="1"/>
+	                <PickerRow title="2"/>
+	                <PickerRow title="3"/>
+	                <PickerRow title="4"/>
+	                <PickerRow title="5"/>
+	                <PickerRow title="6"/>
+	                <PickerRow title="7"/>
+	                <PickerRow title="8"/>
+	                <PickerRow title="9"/>
+	                <PickerRow title="10"/>
+	                <PickerRow title="11"/>
+	                <PickerRow title="12"/>
+	            </PickerColumn>
+			</Picker>
+			<Label>Period - Months</Label>
+			<Picker id="job1_months">
+				<PickerColumn id="column1">
+	                <PickerRow title="1"/>
+	                <PickerRow title="2"/>
+	                <PickerRow title="3"/>
+	                <PickerRow title="4"/>
+	                <PickerRow title="5"/>
+	                <PickerRow title="6"/>
+	                <PickerRow title="7"/>
+	                <PickerRow title="8"/>
+	                <PickerRow title="9"/>
+	                <PickerRow title="10"/>
+	                <PickerRow title="11"/>
+	                <PickerRow title="12"/>
+	            </PickerColumn>
+			</Picker>
+			<Label>Save</Label>
+			<Button id="save" title="Save" onClick="saveCandidate" />
+		</ScrollView>
+	</Window>
+</Alloy>

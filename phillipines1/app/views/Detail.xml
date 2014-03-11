@@ -1,0 +1,38 @@
+<Alloy>
+	<Window id="detailWindow" title="Detail" tabBarHidden="true">
+		<ScrollView id="detailWrap" layout="vertical">
+			<Label>Name</Label>
+			<Label>First</Label>
+			<Label class="label_val" id="first_name" />
+			<Label>Last</Label>
+			<Label class="label_val" id="last_name" />
+			<Label>Middle</Label>
+			<Label class="label_val" id="middle_name" />
+			<Label>Age</Label>
+			<Label class="label_val" id="age" />
+			<Label>Sex</Label>
+			<Label class="label_val" id="sex" />
+			<Label>Employment Status</Label>
+			<Label class="label_val" id="employment_status" />
+			<Label>Address</Label>
+			<Label class="label_val" id="address" />
+			<Label>Mobile Phone Number</Label>
+			<Label class="label_val" id="mobile_phone_number" />
+			<Label>Education Attainment</Label>
+			<Label>Level</Label>
+			<Label class="label_val" id="level" />
+			<Label>Course</Label>
+			<Label class="label_val" id="course" />
+			<Label>Work Experience</Label>
+			<Label>Job 1</Label>
+			<Label>Position</Label>
+			<Label class="label_val" id="job1_position" />
+			<Label>Period - Years</Label>
+			<Label class="label_val" id="job1_years" />
+			<Label>Period - Months</Label>
+			<Label class="label_val" id="job1_months" />
+			<Label>Edit</Label>
+			<Button id="save" title="Edit" />
+		</ScrollView>
+	</Window>
+</Alloy>

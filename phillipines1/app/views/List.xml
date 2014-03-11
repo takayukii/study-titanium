@@ -1,0 +1,14 @@
+<Alloy>
+	<Collection src="Candidate"/ >
+	<Window title="List">
+		<TableView id="list" dataCollection="Candidate" dataTransform="transCandidate">
+			<TableViewRow onClick="viewDetail" _id="{alloy_id}">
+				<View id="candidateWrap">
+					<Label class="candidateText" id="name" text="{name}" />
+					<Label class="candidateText" id="sex" text="{sex}" />
+					<Label class="candidateText" id="created" text="{created}" />
+				</View>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>
