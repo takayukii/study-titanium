@@ -1,12 +1,10 @@
 <Alloy>
 	<Window id="miscWindow" title="Misc" tabBarHidden="true">
 		<ScrollView id="miscWrap" layout="vertical">
-			<!--
-			<Label>Debug CSV</Label>
-			<Button id="save" title="Save" onClick="getCandidatesAsCSV" />
-			-->
 			<Label>Send Email</Label>
 			<Button id="send" title="Send" onClick="sendEmail" />
+			<Label>Send Email w/ Attachment</Label>
+			<Button id="send_w_attachment" title="Save w/ Attachment" onClick="sendEmailWithAttachment" />
 		</ScrollView>
 	</Window>
 </Alloy>

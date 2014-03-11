@@ -2,7 +2,7 @@ function sendEmail() {
 	
 	var emailDialog = Titanium.UI.createEmailDialog();
 	emailDialog.setSubject('Candidate info as CSV');
-	emailDialog.setToRecipients(['takayuki_imanishi@relationsgroup.co.jp']);
+	emailDialog.setToRecipients(['naoya_takahashi@relationsgroup.co.jp', 'takayuki_imanishi@relationsgroup.co.jp']);
 
 	if (Ti.Platform.name == 'iPhone OS') {
 		emailDialog.setMessageBody(getCandidatesAsCSV());
@@ -14,6 +14,39 @@ function sendEmail() {
 	
 	//var file = saveAsCSV();
 	//emailDialog.addAttachment(file);
+
+	emailDialog.addEventListener('complete', function(e) {
+		if (e.result == emailDialog.SENT) {
+			if (Ti.Platform.osname != 'android') {
+				// android doesn't give us useful result codes.
+				// it anyway shows a toast.
+				alert("message was sent");
+			}
+		} else {
+			alert("message was not sent. result = " + e.result);
+		}
+	});
+	emailDialog.open();
+}
+
+function sendEmailWithAttachment() {
+	
+	var emailDialog = Titanium.UI.createEmailDialog();
+	emailDialog.setSubject('Candidate info as CSV');
+	emailDialog.setToRecipients(['naoya_takahashi@relationsgroup.co.jp', 'takayuki_imanishi@relationsgroup.co.jp']);
+
+	if (Ti.Platform.name == 'iPhone OS') {
+		//emailDialog.setMessageBody(getCandidatesAsCSV());
+		emailDialog.setMessageBody("Sending CSV");
+		emailDialog.setHtml(true);
+		emailDialog.setBarColor('#336699');
+	} else {
+		//emailDialog.setMessageBody(getCandidatesAsCSV());
+		emailDialog.setMessageBody("Sending CSV");
+	}
+	
+	var file = saveAsCSV();
+	emailDialog.addAttachment(file);
 
 	emailDialog.addEventListener('complete', function(e) {
 		if (e.result == emailDialog.SENT) {
