@@ -46,7 +46,7 @@
 			<Label>Course</Label>
 			<Picker id="course">
 				<PickerColumn id="column1">
-	                <PickerRow title="Employed"/>
+	                <PickerRow title="berklee college of music"/>
 	                <PickerRow title="Unemployed"/>
 	                <PickerRow title="Self-employed"/>
 	                <PickerRow title="Employed"/>
