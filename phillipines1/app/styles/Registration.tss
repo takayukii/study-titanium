@@ -1,26 +1,80 @@
-"Label": {
+".small_title": {
   font: {
-    fontSize: "16sp",
-    fontWeight: "bold"
+    fontSize: "18sp"
   },
   textAlign: "left",
-  color: "#333333",
+  color: "white",
   width: Ti.UI.SIZE,
   height: Ti.UI.SIZE,
-  top: "11dp",
-  bottom: "11dp",
-  left: "11dp",
+  top: "10dp",
+  bottom: "5dp",
+  left: "18dp",
   right: "11dp"
 }
+
 "Label[platform=android]": {
-  color: "#FFFFFF"
+  font: {
+    fontSize: "16sp"
+  },
+    color: "#FFFFFF"
 }
 "TextField": {
+  font: {
+    fontSize: "16sp"
+  },
   width: Ti.UI.FILL,
+  backgroundColor: "#ffffff",
+  color: "#000000"
 }
+
 "Picker": {
+  font: {
+    fontSize: "16sp"
+  },
 	width: Ti.UI.FILL,
+  backgroundColor: "#ffffff",
+  color: "#000000"
 }
+
 "Button": {
+  font: {
+    fontSize: "20sp",
+    fontWeight: "bold"
+  },
 	width: Ti.UI.FILL,
+  top: "30dp",
+  bottom: "11dp",
+  left: "11dp",
+  right: "11dp"	
+  }
+
+".big_title": {
+  font: {
+    fontSize: "22sp",
+    fontWeight: "bold"
+  },
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  color: "white",
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  top: "34dp",
+  bottom: "0dp",
+  left: "11dp",
+  right: "11dp"	
 }
+
+".big_title2": {
+  font: {
+    fontSize: "22sp",
+    fontWeight: "bold"
+  },
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  color: "white",
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  top: "34dp",
+  bottom: "11dp",
+  left: "11dp",
+  right: "11dp"	
+}
+
