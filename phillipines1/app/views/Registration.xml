@@ -1,7 +1,9 @@
 <Alloy>
 	<Window id="registrationWindow" title="Registration" tabBarHidden="true">
 		<ScrollView id="registrationWrap" layout="vertical">
-			<Label>Name</Label>
+		<body style="text align: center">
+			<Label><bold>Name</bold></Label>
+		</body>
 			<Label>First</Label>
 			<TextField id="first_name" />
 			<Label>Last</Label>
@@ -29,7 +31,9 @@
 			<TextField id="address" />
 			<Label>Mobile Phone Number</Label>
 			<TextField id="mobile_phone_number" />
-			<Label>Education Attainment</Label>
+	    	<body style="text align: center">
+				<Label><bold>Education Attainment</bold></Label>
+			</body>
 			<Label>Level</Label>
 			<Picker id="level">
 				<PickerColumn id="column1">
@@ -43,39 +47,88 @@
 	                <PickerRow title="College Undergrad."/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Course</Label>
+			<Label>Course (kung meron)</Label>
 			<Picker id="course">
 				<PickerColumn id="column1">
-	                <PickerRow title="berklee college of music"/>
-	                <PickerRow title="Hello Git"/>
-	                <PickerRow title="Good Afternoon Git"/>
-	                <PickerRow title="Goodi Night Git"/>
-	                <PickerRow title="Unemployed"/>
-	                <PickerRow title="Self-employed"/>
-	                <PickerRow title="Employed"/>
-	                <PickerRow title="Unemployed"/>
-	                <PickerRow title="Self-employed"/>
-	                <PickerRow title="Employed"/>
-	                <PickerRow title="Unemployed"/>
-	                <PickerRow title="Self-employed"/>
-	                <PickerRow title="Employed"/>
-	                <PickerRow title="Unemployed"/>
-	                <PickerRow title="Self-employed"/>
-	                <PickerRow title="Employed"/>
-	                <PickerRow title="Unemployed"/>
-	                <PickerRow title="Self-employed"/>
-	                <PickerRow title="Employed"/>
-	                <PickerRow title="Unemployed"/>
-	                <PickerRow title="Self-employed"/>
-	                <PickerRow title="Employed"/>
-	                <PickerRow title="Unemployed"/>
-	                <PickerRow title="Self-employed"/>
+                 <PickerRow title="Accounting"/>
+                 <PickerRow title="Actuarial Science"/>
+                 <PickerRow title="Arts and Literature"/>
+                 <PickerRow title="Advertising/Media"/>
+                 <PickerRow title="Agriculture/Aquaculture/Forestry"/>
+                 <PickerRow title="Architecture"/>
+                 <PickerRow title="Airline Operation/Airport Management"/>
+                 <PickerRow title="Biology"/>
+                 <PickerRow title="Biosciences"/>
+                 <PickerRow title="Business Studies/Administration/Management"/>
+                 <PickerRow title="Chemistry"/>
+                 <PickerRow title="Computer Science/Information Technology"/>
+                 <PickerRow title="Communications/PR"/>
+                 <PickerRow title="Creative Multimedia"/>
+                 <PickerRow title="Culinary Arts/Cooking"/>
+                 <PickerRow title="Dentistry"/>
+                 <PickerRow title="Economics"/>
+                 <PickerRow title="Education/Teaching/Training"/>
+                 <PickerRow title="Engineering (Aviation/Aeronautics/Astronautics)"/>
+                 <PickerRow title="Engineering (Bioengineering/Biomedical)"/>
+                 <PickerRow title="Engineering (Chemical)"/>
+                 <PickerRow title="Engineering (Civil)"/>
+                 <PickerRow title="Engineering (Computer)"/>
+                 <PickerRow title="Engineering (Electronic and Communication)"/>
+                 <PickerRow title="Engineering (Electrical)"/>
+                 <PickerRow title="Engineering (Industrial)"/>
+                 <PickerRow title="Engineering (Mechanical)"/>
+                 <PickerRow title="Engineering (Material Science)"/>
+                 <PickerRow title="Engineering (Metal Fabrication/Tool and Die/Welding)"/>
+                 <PickerRow title="Engineering (Mining/Mineral)"/>
+                 <PickerRow title="Engineering (Marine)"/>
+                 <PickerRow title="Engineering (Mechatronic/Electromechanical)"/>
+                 <PickerRow title="Engineering (Environmental/Safety)"/>
+                 <PickerRow title="Engineering (Others)"/>
+                 <PickerRow title="Engineering (Petroleum/Oil/Gas)"/>
+                 <PickerRow title="Food and Beverage Services Management"/>
+                 <PickerRow title="Finance"/>
+                 <PickerRow title="Fine Arts/Design/Graphics"/>
+                 <PickerRow title="Food Science/Nutrition/Dietetics"/>
+                 <PickerRow title="Geographical/Geophysics"/>
+                 <PickerRow title="History"/>
+                 <PickerRow title="Hospitality/Hotel and Restaurant Management"/>
+                 <PickerRow title="Human Resource Management"/>
+                 <PickerRow title="Journalism"/>
+                 <PickerRow title="Law"/>
+                 <PickerRow title="Humanities/Liberal Arts"/>
+                 <PickerRow title="Library Management"/>
+                 <PickerRow title="Linguistics/Languages"/>
+                 <PickerRow title="Logistic/Transportation"/>
+                 <PickerRow title="Marketing"/>
+                 <PickerRow title="Mathematics"/>
+                 <PickerRow title="Medicine"/>
+                 <PickerRow title="Medical Science"/>
+                 <PickerRow title="Maritime Studies"/>
+                 <PickerRow title="Nursing"/>
+                 <PickerRow title="Optometry"/>
+                 <PickerRow title="Pharmacy/Pharmacology"/>
+                 <PickerRow title="Philosophy"/>
+                 <PickerRow title="Physical Therapy/Physiotherapy"/>
+                 <PickerRow title="Physics"/>
+                 <PickerRow title="Personal Services"/>
+                 <PickerRow title="Political Science"/>
+                 <PickerRow title="Property Development/Real Estate Management"/>
+                 <PickerRow title="Protective Service and Management"/>
+                 <PickerRow title="Psychology"/>
+                 <PickerRow title="Science and Technology"/>
+                 <PickerRow title="Secretarial"/>
+                 <PickerRow title="Social Science/Sociology"/>
+                 <PickerRow title="Sports Science and Management"/>
+                 <PickerRow title="Textile/Fashion Design"/>
+                 <PickerRow title="Theology/Religious Studies"/>
+                 <PickerRow title="Tourism/Travel"/>
+                 <PickerRow title="Urban Studies/Town Planning"/>
+                 <PickerRow title="Veterinary"/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Work Experience</Label>
-			<Label>Job 1</Label>
+			<Label>Work Experience 1 (kung meron)</Label>
 			<Label>Position</Label>
-			<TextField id="job1_position" />
+			<TextField id="workexp1_position" />
 			<Label>Period - Years</Label>
 			<Picker id="job1_years">
 				<PickerColumn id="column1">
@@ -110,7 +163,81 @@
 	                <PickerRow title="12"/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Save</Label>
+			<Label>Work Experience 2 (kung meron)</Label>
+			<Label>Position</Label>
+			<TextField id="workexp2_position" />
+			<Label>Period - Years</Label>
+			<Picker id="job2_years">
+				<PickerColumn id="column1">
+	                <PickerRow title="1"/>
+	                <PickerRow title="2"/>
+	                <PickerRow title="3"/>
+	                <PickerRow title="4"/>
+	                <PickerRow title="5"/>
+	                <PickerRow title="6"/>
+	                <PickerRow title="7"/>
+	                <PickerRow title="8"/>
+	                <PickerRow title="9"/>
+	                <PickerRow title="10"/>
+	                <PickerRow title="11"/>
+	                <PickerRow title="12"/>
+	            </PickerColumn>
+			</Picker>
+			<Label>Period - Months</Label>
+			<Picker id="job2_months">
+				<PickerColumn id="column1">
+	                <PickerRow title="1"/>
+	                <PickerRow title="2"/>
+	                <PickerRow title="3"/>
+	                <PickerRow title="4"/>
+	                <PickerRow title="5"/>
+	                <PickerRow title="6"/>
+	                <PickerRow title="7"/>
+	                <PickerRow title="8"/>
+	                <PickerRow title="9"/>
+	                <PickerRow title="10"/>
+	                <PickerRow title="11"/>
+	                <PickerRow title="12"/>
+	            </PickerColumn>
+			</Picker>
+						<Label>Work Experience 3 (kung meron)</Label>
+			<Label>Position</Label>
+			<TextField id="workexp3_position" />
+			<Label>Period - Years</Label>
+			<Picker id="job3_years">
+				<PickerColumn id="column1">
+	                <PickerRow title="1"/>
+	                <PickerRow title="2"/>
+	                <PickerRow title="3"/>
+	                <PickerRow title="4"/>
+	                <PickerRow title="5"/>
+	                <PickerRow title="6"/>
+	                <PickerRow title="7"/>
+	                <PickerRow title="8"/>
+	                <PickerRow title="9"/>
+	                <PickerRow title="10"/>
+	                <PickerRow title="11"/>
+	                <PickerRow title="12"/>
+	            </PickerColumn>
+			</Picker>
+			<Label>Period - Months</Label>
+			<Picker id="job3_months">
+				<PickerColumn id="column1">
+	                <PickerRow title="1"/>
+	                <PickerRow title="2"/>
+	                <PickerRow title="3"/>
+	                <PickerRow title="4"/>
+	                <PickerRow title="5"/>
+	                <PickerRow title="6"/>
+	                <PickerRow title="7"/>
+	                <PickerRow title="8"/>
+	                <PickerRow title="9"/>
+	                <PickerRow title="10"/>
+	                <PickerRow title="11"/>
+	                <PickerRow title="12"/>
+	            </PickerColumn>
+			</Picker>
+						<Label>Save</Label>
 			<Button id="save" title="Save" onClick="saveCandidate" />
 		</ScrollView>
 	</Window>
