@@ -1,25 +1,92 @@
 <Alloy>
-	<Window id="registrationWindow" title="Registration" tabBarHidden="true">
+	<Window id="registrationWindow" title="Registration" tabBarHidden="true" backgroundColor="#4682B4">
 		<ScrollView id="registrationWrap" layout="vertical">
-		<body style="text align: center">
-			<Label><bold>Name</bold></Label>
-		</body>
-			<Label>First</Label>
+			<Label class="big_title">Name</Label>
+			<Label class="small_title">First</Label>
 			<TextField id="first_name" />
-			<Label>Last</Label>
+			<Label class="small_title">Last</Label>
 			<TextField id="last_name" />
-			<Label>Middle</Label>
+			<Label class="small_title">Middle</Label>
 			<TextField id="middle_name" />
-			<Label>Age</Label>
-			<TextField id="age" />
-			<Label>Sex</Label>
+			<Label class="big_title2">Age</Label>
+			<Picker id="age">
+				<PickerColumn id="column1">
+	                <PickerRow title="15"/>
+	                <PickerRow title="16"/>
+	                <PickerRow title="17"/>			
+	                <PickerRow title="18"/>
+	                <PickerRow title="19"/>
+	                <PickerRow title="20"/>			
+	                <PickerRow title="21"/>
+    	            <PickerRow title="22"/>
+        	        <PickerRow title="23"/>
+            	    <PickerRow title="24"/>
+                	<PickerRow title="25"/>
+	                <PickerRow title="26"/>
+    	            <PickerRow title="27"/>
+        	        <PickerRow title="28"/>
+            	    <PickerRow title="29"/>
+                	<PickerRow title="30"/>
+	                <PickerRow title="31"/>
+    	            <PickerRow title="32"/>
+        	        <PickerRow title="33"/>
+            	    <PickerRow title="34"/>
+                	<PickerRow title="35"/>
+	                <PickerRow title="36"/>
+    	            <PickerRow title="37"/>
+        	        <PickerRow title="38"/>
+            	    <PickerRow title="39"/>
+                	<PickerRow title="40"/>
+	                <PickerRow title="41"/>
+    	            <PickerRow title="42"/>
+        	        <PickerRow title="43"/>
+            	    <PickerRow title="44"/>
+                	<PickerRow title="45"/>
+	                <PickerRow title="46"/>
+    	            <PickerRow title="47"/>
+        	        <PickerRow title="48"/>
+            	    <PickerRow title="49"/>
+                	<PickerRow title="50"/>
+	                <PickerRow title="51"/>
+    	            <PickerRow title="52"/>
+        	        <PickerRow title="53"/>
+            	    <PickerRow title="54"/>
+					<PickerRow title="55"/>
+               	 	<PickerRow title="56"/>
+ 	                <PickerRow title="57"/>
+    	            <PickerRow title="58"/>
+        	        <PickerRow title="59"/>
+            	    <PickerRow title="60"/>
+                	<PickerRow title="61"/>
+	                <PickerRow title="62"/>
+    	            <PickerRow title="63"/>
+        	        <PickerRow title="64"/>
+            	    <PickerRow title="65"/>
+	                <PickerRow title="66"/>
+    	            <PickerRow title="67"/>
+        	        <PickerRow title="68"/>
+            	    <PickerRow title="69"/>
+	                <PickerRow title="70"/>
+    	            <PickerRow title="71"/>
+        	        <PickerRow title="72"/>
+            	    <PickerRow title="73"/>
+                	<PickerRow title="74"/>
+	                <PickerRow title="75"/>
+    	            <PickerRow title="76"/>
+        	        <PickerRow title="77"/>
+            	    <PickerRow title="78"/>
+                	<PickerRow title="79"/>
+             	   <PickerRow title="80"/>
+				</PickerColumn>
+			</Picker>
+			<Label class="big_title2">Sex</Label>
 			<Picker id="sex">
 				<PickerColumn id="column1">
 	                <PickerRow title="Male" />
 	                <PickerRow title="Female" />
 	            </PickerColumn>
 			</Picker>
-			<Label>Employment Status</Label>
+			<Label class="big_title2">Employment Status</Label>
 			<Picker id="employment_status">
 				<PickerColumn id="column1">
 	                <PickerRow title="Employed"/>
@@ -27,29 +94,28 @@
 	                <PickerRow title="Self-employed"/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Address</Label>
+			<Label class="big_title2">Address</Label>
 			<TextField id="address" />
-			<Label>Mobile Phone Number</Label>
+			<Label class="big_title2">Mobile Phone Number</Label>
 			<TextField id="mobile_phone_number" />
-	    	<body style="text align: center">
-				<Label><bold>Education Attainment</bold></Label>
-			</body>
-			<Label>Level</Label>
+			<Label class="big_title">Education Attainment</Label>
+			<Label class="small_title">Level</Label>
 			<Picker id="level">
 				<PickerColumn id="column1">
-	                <PickerRow title="Elementary Grad."/>
-	                <PickerRow title="Elementary Undergrad."/>
 	                <PickerRow title="High School Grad."/>
 	                <PickerRow title="High School Undergrad."/>
-	                <PickerRow title="Vocational Grad."/>
-	                <PickerRow title="Vocational Undergrad."/>
 	                <PickerRow title="College Grad."/>
 	                <PickerRow title="College Undergrad."/>
+	                <PickerRow title="Elementary Grad."/>
+	                <PickerRow title="Elementary Undergrad."/>
+	                <PickerRow title="Vocational Grad."/>
+	                <PickerRow title="Vocational Undergrad."/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Course (kung meron)</Label>
+			<Label class="small_title">Course (kung meron)</Label>
 			<Picker id="course">
 				<PickerColumn id="column1">
+                 <PickerRow title=""/>
                  <PickerRow title="Accounting"/>
                  <PickerRow title="Actuarial Science"/>
                  <PickerRow title="Arts and Literature"/>
@@ -126,12 +192,13 @@
                  <PickerRow title="Veterinary"/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Work Experience 1 (kung meron)</Label>
-			<Label>Position</Label>
+			<Label class="big_title">Work Exp. 1 (kung meron)</Label>
+			<Label class="small_title">Position</Label>
 			<TextField id="workexp1_position" />
-			<Label>Period - Years</Label>
+			<Label class="small_title">Period - Years</Label>
 			<Picker id="job1_years">
 				<PickerColumn id="column1">
+	                <PickerRow title="0"/>
 	                <PickerRow title="1"/>
 	                <PickerRow title="2"/>
 	                <PickerRow title="3"/>
@@ -144,11 +211,50 @@
 	                <PickerRow title="10"/>
 	                <PickerRow title="11"/>
 	                <PickerRow title="12"/>
+	                <PickerRow title="13"/>
+	                <PickerRow title="14"/>
+	                <PickerRow title="15"/>
+	                <PickerRow title="16"/>
+	                <PickerRow title="17"/>
+	                <PickerRow title="18"/>
+	                <PickerRow title="19"/>
+	                <PickerRow title="20"/>
+	                <PickerRow title="21"/>
+	                <PickerRow title="22"/>
+	                <PickerRow title="23"/>
+	                <PickerRow title="24"/>
+	                <PickerRow title="25"/>
+	                <PickerRow title="26"/>
+	                <PickerRow title="27"/>
+	                <PickerRow title="28"/>
+	                <PickerRow title="29"/>
+	                <PickerRow title="30"/>
+	                <PickerRow title="31"/>
+	                <PickerRow title="32"/>
+	                <PickerRow title="33"/>
+	                <PickerRow title="34"/>
+	                <PickerRow title="35"/>
+	                <PickerRow title="36"/>
+	                <PickerRow title="37"/>
+	                <PickerRow title="38"/>
+	                <PickerRow title="39"/>
+	                <PickerRow title="40"/>
+	                <PickerRow title="41"/>
+	                <PickerRow title="42"/>
+	                <PickerRow title="43"/>
+	                <PickerRow title="44"/>
+	                <PickerRow title="45"/>
+	                <PickerRow title="46"/>
+	                <PickerRow title="47"/>
+	                <PickerRow title="48"/>
+	                <PickerRow title="49"/>
+	                <PickerRow title="50"/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Period - Months</Label>
+			<Label class="small_title">Period - Months</Label>
 			<Picker id="job1_months">
 				<PickerColumn id="column1">
+	                <PickerRow title="0"/>
 	                <PickerRow title="1"/>
 	                <PickerRow title="2"/>
 	                <PickerRow title="3"/>
@@ -163,12 +269,13 @@
 	                <PickerRow title="12"/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Work Experience 2 (kung meron)</Label>
-			<Label>Position</Label>
+			<Label class="big_title">Work Exp. 2 (kung meron)</Label>
+			<Label class="small_title">Position</Label>
 			<TextField id="workexp2_position" />
-			<Label>Period - Years</Label>
+			<Label class="small_title">Period - Years</Label>
 			<Picker id="job2_years">
 				<PickerColumn id="column1">
+	                <PickerRow title="0"/>
 	                <PickerRow title="1"/>
 	                <PickerRow title="2"/>
 	                <PickerRow title="3"/>
@@ -181,11 +288,50 @@
 	                <PickerRow title="10"/>
 	                <PickerRow title="11"/>
 	                <PickerRow title="12"/>
+	                <PickerRow title="13"/>
+	                <PickerRow title="14"/>
+	                <PickerRow title="15"/>
+	                <PickerRow title="16"/>
+	                <PickerRow title="17"/>
+	                <PickerRow title="18"/>
+	                <PickerRow title="19"/>
+	                <PickerRow title="20"/>
+	                <PickerRow title="21"/>
+	                <PickerRow title="22"/>
+	                <PickerRow title="23"/>
+	                <PickerRow title="24"/>
+	                <PickerRow title="25"/>
+	                <PickerRow title="26"/>
+	                <PickerRow title="27"/>
+	                <PickerRow title="28"/>
+	                <PickerRow title="29"/>
+	                <PickerRow title="30"/>
+	                <PickerRow title="31"/>
+	                <PickerRow title="32"/>
+	                <PickerRow title="33"/>
+	                <PickerRow title="34"/>
+	                <PickerRow title="35"/>
+	                <PickerRow title="36"/>
+	                <PickerRow title="37"/>
+	                <PickerRow title="38"/>
+	                <PickerRow title="39"/>
+	                <PickerRow title="40"/>
+	                <PickerRow title="41"/>
+	                <PickerRow title="42"/>
+	                <PickerRow title="43"/>
+	                <PickerRow title="44"/>
+	                <PickerRow title="45"/>
+	                <PickerRow title="46"/>
+	                <PickerRow title="47"/>
+	                <PickerRow title="48"/>
+	                <PickerRow title="49"/>
+	                <PickerRow title="50"/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Period - Months</Label>
+			<Label class="small_title">Period - Months</Label>
 			<Picker id="job2_months">
 				<PickerColumn id="column1">
+	                <PickerRow title="0"/>
 	                <PickerRow title="1"/>
 	                <PickerRow title="2"/>
 	                <PickerRow title="3"/>
@@ -200,12 +346,13 @@
 	                <PickerRow title="12"/>
 	            </PickerColumn>
 			</Picker>
-						<Label>Work Experience 3 (kung meron)</Label>
-			<Label>Position</Label>
+			<Label class="big_title">Work Exp. 3 (kung meron)</Label>
+			<Label class="small_title">Position</Label>
 			<TextField id="workexp3_position" />
-			<Label>Period - Years</Label>
+			<Label class="small_title">Period - Years</Label>
 			<Picker id="job3_years">
 				<PickerColumn id="column1">
+	                <PickerRow title="0"/>
 	                <PickerRow title="1"/>
 	                <PickerRow title="2"/>
 	                <PickerRow title="3"/>
@@ -218,11 +365,50 @@
 	                <PickerRow title="10"/>
 	                <PickerRow title="11"/>
 	                <PickerRow title="12"/>
+	                <PickerRow title="13"/>
+	                <PickerRow title="14"/>
+	                <PickerRow title="15"/>
+	                <PickerRow title="16"/>
+	                <PickerRow title="17"/>
+	                <PickerRow title="18"/>
+	                <PickerRow title="19"/>
+	                <PickerRow title="20"/>
+	                <PickerRow title="21"/>
+	                <PickerRow title="22"/>
+	                <PickerRow title="23"/>
+	                <PickerRow title="24"/>
+	                <PickerRow title="25"/>
+	                <PickerRow title="26"/>
+	                <PickerRow title="27"/>
+	                <PickerRow title="28"/>
+	                <PickerRow title="29"/>
+	                <PickerRow title="30"/>
+	                <PickerRow title="31"/>
+	                <PickerRow title="32"/>
+	                <PickerRow title="33"/>
+	                <PickerRow title="34"/>
+	                <PickerRow title="35"/>
+	                <PickerRow title="36"/>
+	                <PickerRow title="37"/>
+	                <PickerRow title="38"/>
+	                <PickerRow title="39"/>
+	                <PickerRow title="40"/>
+	                <PickerRow title="41"/>
+	                <PickerRow title="42"/>
+	                <PickerRow title="43"/>
+	                <PickerRow title="44"/>
+	                <PickerRow title="45"/>
+	                <PickerRow title="46"/>
+	                <PickerRow title="47"/>
+	                <PickerRow title="48"/>
+	                <PickerRow title="49"/>
+	                <PickerRow title="50"/>
 	            </PickerColumn>
 			</Picker>
-			<Label>Period - Months</Label>
+			<Label class="small_title">Period - Months</Label>
 			<Picker id="job3_months">
 				<PickerColumn id="column1">
+	                <PickerRow title="0"/>
 	                <PickerRow title="1"/>
 	                <PickerRow title="2"/>
 	                <PickerRow title="3"/>
@@ -237,8 +423,7 @@
 	                <PickerRow title="12"/>
 	            </PickerColumn>
 			</Picker>
-						<Label>Save</Label>
-			<Button id="save" title="Save" onClick="saveCandidate" />
+			<Button id="save" title="SAVE" onClick="saveCandidate" />
 		</ScrollView>
 	</Window>
 </Alloy>
