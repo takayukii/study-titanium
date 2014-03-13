@@ -81,7 +81,7 @@ exports.definition = {
 				if ((attr.mobile_phone_number).length <= 0) {
 					return "Error: mobile_phone_number is empty.";
 				}
-				if (!(attr.mobile_phone_number).match(/^[1-9][0-9]*$/)) {
+				if (!(attr.mobile_phone_number).match(/^[0-9][0-9]*$/)) {
 					return "Error: mobile_phone_number contains characters.";
 				}
 				
