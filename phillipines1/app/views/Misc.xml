@@ -4,7 +4,7 @@
 			<Label>Send Email</Label>
 			<Button id="send" title="Send" onClick="sendEmail" />
 			<Label>Send Email w/ Attachment</Label>
-			<Button id="send_w_attachment" title="Save w/ Attachment" onClick="sendEmailWithAttachment" />
+			<Button id="send_w_attachment" title="Send w/ Attachment" onClick="sendEmailWithAttachment" />
 		</ScrollView>
 	</Window>
 </Alloy>
