@@ -1,12 +1,9 @@
 var moment = require("alloy/moment");
 function transCandidate(model) {
-	var transform, created;
+	
+	var transform;
 	transform = model.toJSON();
-	
 	transform.name = transform.first_name + " " + transform.last_name; 
-	
-	//created = transform.created;
-	//transform.created = moment(Number(created)).format("YYYY/MM/DD hh:mm:ss");
 	return transform;
 }
 

@@ -1,6 +1,6 @@
 <Alloy>
 	<Window id="registrationWindow" title="Registration" tabBarHidden="true" backgroundColor="#4682B4">
-		<ScrollView id="registrationWrap" layout="vertical">
+		<ScrollView id="registrationWrap" layout="vertical" onClick="blurTextField">
 			<Label class="big_title">Name</Label>
 			<Label class="small_title">First</Label>
 			<TextField id="first_name" />
@@ -11,7 +11,7 @@
 			<Label class="big_title2">Age</Label>
 			<Picker id="age">
 				<PickerColumn id="column1">
-					<PickerRow title="15"/>
+					<PickerRow title="15" color="#4682B4"/>
 					<PickerRow title="16"/>
 					<PickerRow title="17"/>
 					<PickerRow title="18"/>

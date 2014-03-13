@@ -31,8 +31,24 @@
 			<Label class="label_val" id="job1_years" />
 			<Label>Period - Months</Label>
 			<Label class="label_val" id="job1_months" />
+			<Label>Job 2</Label>
+			<Label>Position</Label>
+			<Label class="label_val" id="job2_position" />
+			<Label>Period - Years</Label>
+			<Label class="label_val" id="job2_years" />
+			<Label>Period - Months</Label>
+			<Label class="label_val" id="job2_months" />
+			<Label>Job 3</Label>
+			<Label>Position</Label>
+			<Label class="label_val" id="job3_position" />
+			<Label>Period - Years</Label>
+			<Label class="label_val" id="job3_years" />
+			<Label>Period - Months</Label>
+			<Label class="label_val" id="job3_months" />
 			<Label>Edit</Label>
-			<Button id="save" title="Edit" />
+			<Button id="edit" title="Edit" onClick="editCandidate" />
+			<Label>Delete</Label>
+			<Button id="deleteCandidate" title="Delete" onClick="deleteCandidate" />
 		</ScrollView>
 	</Window>
 </Alloy>

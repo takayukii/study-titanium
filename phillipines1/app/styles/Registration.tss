@@ -31,7 +31,7 @@
   font: {
     fontSize: "16sp"
   },
-	width: Ti.UI.FILL,
+  width: Ti.UI.FILL,
   backgroundColor: "#ffffff",
   color: "#000000"
 }
