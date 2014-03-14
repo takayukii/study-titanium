@@ -97,29 +97,14 @@ function convertTocsv(candidates) {
 
 function saveAsCSV() {
 
-	var data = {
-		'hoge' : 100,
-		'foo' : 200,
-		'bar' : 300
-	};
+	var data = getCandidatesAsCSV();
 
 	if (Ti.Platform.osname == 'iphone') {
 
 	} else {
-
-		var json = JSON.stringify(data);
-		var file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, "generated_filename.txt");
-		file.write(json);
-
-		file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, "generated_filename.txt");
-		var contents = file.read();
-		var parsed_contents = JSON.parse(contents);
-
-		Ti.API.info("filepath: " + contents.getNativePath());
-		Ti.API.info("filecontent_source: " + contents);
-		Ti.API.info("hoge: " + parsed_contents.hoge);
-		Ti.API.info("foo: " + parsed_contents.foo);
-		Ti.API.info("bar: " + parsed_contents.bar);
+		
+		var file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, "candidate.csv");
+		file.write(data);
 		
 		return file;
 	}
