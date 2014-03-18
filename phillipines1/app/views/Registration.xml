@@ -1,14 +1,15 @@
 <Alloy>
 	<Window id="registrationWindow" title="Registration" tabBarHidden="true" backgroundColor="#4682B4">
 		<ScrollView id="registrationWrap" layout="vertical" onClick="blurTextField">
+			<Label class="big_title">Paki fill apan lang po LAHAT NG BLANKO ng ganitong marka “*”</Label>
 			<Label class="big_title">Name</Label>
-			<Label class="small_title">First</Label>
+			<Label class="small_title">First *</Label>
 			<TextField id="first_name" />
-			<Label class="small_title">Last</Label>
+			<Label class="small_title">Last *</Label>
 			<TextField id="last_name" />
-			<Label class="small_title">Middle</Label>
+			<Label class="small_title">Middle *</Label>
 			<TextField id="middle_name" />
-			<Label class="big_title2">Age</Label>
+			<Label class="big_title2">Age *</Label>
 			<Picker id="age">
 				<PickerColumn id="column1">
 					<PickerRow title="15" color="#4682B4"/>
@@ -79,14 +80,14 @@
 					<PickerRow title="80"/>
 				</PickerColumn>
 			</Picker>
-			<Label class="big_title2">Sex</Label>
+			<Label class="big_title2">Sex *</Label>
 			<Picker id="sex">
 				<PickerColumn id="column1">
 					<PickerRow title="Male" />
 					<PickerRow title="Female" />
 				</PickerColumn>
 			</Picker>
-			<Label class="big_title2">Employment Status</Label>
+			<Label class="big_title2">Employment Status *</Label>
 			<Picker id="employment_status">
 				<PickerColumn id="column1">
 					<PickerRow title="Employed"/>
@@ -94,12 +95,12 @@
 					<PickerRow title="Self-employed"/>
 				</PickerColumn>
 			</Picker>
-			<Label class="big_title2">Address</Label>
+			<Label class="big_title2">Address *</Label>
 			<TextField id="address" />
-			<Label class="big_title2">Mobile Phone Number</Label>
+			<Label class="big_title2">Mobile Phone Number *</Label>
 			<TextField id="mobile_phone_number" />
 			<Label class="big_title">Education Attainment</Label>
-			<Label class="small_title">Level</Label>
+			<Label class="small_title">Level *</Label>
 			<Picker id="level">
 				<PickerColumn id="column1">
 					<PickerRow title="High School Grad."/>

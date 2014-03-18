@@ -78,3 +78,16 @@
   right: "11dp"	
 }
 
+".mark": {
+  font: {
+    fontSize: "18sp"
+  },
+  textAlign: "left",
+  color: "orange",
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  top: "10dp",
+  bottom: "5dp",
+  left: "18dp",
+  right: "11dp"
+}
