@@ -4,7 +4,8 @@ exports.definition = {
 			"first_name" : "text",
 			"last_name" : "text",
 			"middle_name" : "text",
-			"age" : "integer",
+			"birthday" : "text",
+			//"age" : "integer",
 			"sex" : "text",
 			"employment_status" : "text",
 			"address" : "text",
@@ -59,9 +60,10 @@ exports.definition = {
 					return "Error: middle_name is too long.";
 				}
 
+				/*
 				if (!(attr.age).match(/^[1-9][0-9]*$/)) {
 					return "Error: age is not number.";
-				}
+				}*/
 				
 				if ((attr.sex).length <= 0) {
 					return "Error: sex is empty.";

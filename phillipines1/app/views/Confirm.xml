@@ -47,10 +47,8 @@
 			<Label class="label_val" id="job3_years" />
 			<Label>Period - Months</Label>
 			<Label class="label_val" id="job3_months" />
-			<Label>Edit</Label>
-			<Button id="edit" title="Edit" onClick="editCandidate" />
-			<Label>Delete</Label>
-			<Button id="deleteCandidate" title="Delete" onClick="deleteCandidate" />
+			<Label>Save</Label>
+			<Button id="edit" title="Save" onClick="saveCandidate" />
 		</ScrollView>
 	</Window>
 </Alloy>

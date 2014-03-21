@@ -1,7 +1,8 @@
 var args = arguments[0] || {};
 
-console.log("Registration Initialized");
+var birthday = new Date("July 13, 1984 0:0:0");
 
+console.log("Registration Initialized");
 initializeEventListener();
 
 var savedCandidate = args.candidate;
@@ -10,12 +11,15 @@ if ( typeof savedCandidate !== 'undefined') {
 
 	// 修正時はここにくる
 	console.log("candidate is here");
-
+	console.log(savedCandidate);
+	
 	modifyEventListener();
 	setExistingValues();
 
 } else {
 	console.log("candidate is not here");
+	console.log(savedCandidate);
+	initializeValues();
 }
 
 function modifyEventListener() {
@@ -31,20 +35,22 @@ function setExistingValues() {
 	$.first_name.value = transform.first_name;
 	$.last_name.value = transform.last_name;
 	$.middle_name.value = transform.middle_name;
+	$.birthday.value = new Date(transform.birthday);
 	$.address.value = transform.address;
 	$.mobile_phone_number.value = transform.mobile_phone_number;
 	$.workexp1_position.value = transform.job1_position;
 	$.workexp2_position.value = transform.job2_position;
 	$.workexp3_position.value = transform.job3_position;
 
-	var rows = $.age.columns[0].rows;
-	$.age.setSelectedRow(0, getRowNum(rows, transform.age), true);
+	//var rows = $.age.columns[0].rows;
+	//$.age.setSelectedRow(0, getRowNum(rows, transform.age), true);
+	
 	rows = $.sex.columns[0].rows;
-	;
 	$.sex.setSelectedRow(0, getRowNum(rows, transform.sex), true);
+	
 	rows = $.employment_status.columns[0].rows;
-	;
 	$.employment_status.setSelectedRow(0, getRowNum(rows, transform.employment_status), true);
+	
 	rows = $.level.columns[0].rows;
 	$.level.setSelectedRow(0, getRowNum(rows, transform.level), true);
 
@@ -91,7 +97,8 @@ function initializeValues() {
 	$.workexp2_position.value = "";
 	$.workexp3_position.value = "";
 
-	$.age.setSelectedRow(0, 0, true);
+	$.birthday.value = new Date("July 13, 1984 0:0:0");
+	//$.age.setSelectedRow(0, 0, true);
 	$.sex.setSelectedRow(0, 0, true);
 	$.employment_status.setSelectedRow(0, 0, true);
 	$.level.setSelectedRow(0, 0, true);
@@ -116,7 +123,8 @@ function saveCandidate() {
 		first_name : $.first_name.value,
 		last_name : $.last_name.value,
 		middle_name : $.middle_name.value,
-		age : $.age.getSelectedRow(0).title,
+		birthday: moment(birthday).format("YYYY/MM/DD"),
+		//age : $.age.getSelectedRow(0).title,
 		sex : $.sex.getSelectedRow(0).title,
 		employment_status : $.employment_status.getSelectedRow(0).title,
 		address : $.address.value,
@@ -141,7 +149,15 @@ function saveCandidate() {
 	});
 
 	if (candidate.set(data)) {
+		var arg = {
+			saving_candidate : data,
+			clear : initializeValues,
+			focus : setPosition
+		};
+		var controller = Alloy.createController('Confirm', arg).getView();
+		controller.open();
 
+		/*
 		candidate.save();
 		alert("Saved");
 
@@ -149,12 +165,22 @@ function saveCandidate() {
 
 		initializeValues();
 		$.first_name.focus();
+		*/
 
 	} else {
 
 		// callbackメソッドが呼ばれるのみ
 
 	}
+}
+
+function setPosition(){
+	$.registrationWrap.scrollToBottom();
+	$.first_name.focus();
+}
+
+function setBirthday(e) {
+  birthday = (e.value).getTime();
 }
 
 function saveUpdatedCandidate() {
@@ -170,7 +196,8 @@ function saveUpdatedCandidate() {
 		first_name : $.first_name.value,
 		last_name : $.last_name.value,
 		middle_name : $.middle_name.value,
-		age : $.age.getSelectedRow(0).title,
+		birthday: moment(birthday).format("YYYY/MM/DD"),
+		//age : $.age.getSelectedRow(0).title,
 		sex : $.sex.getSelectedRow(0).title,
 		employment_status : $.employment_status.getSelectedRow(0).title,
 		address : $.address.value,

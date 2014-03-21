@@ -8,7 +8,12 @@ transform = model.toJSON();
 $.first_name.text = transform.first_name;
 $.last_name.text = transform.last_name;
 $.middle_name.text = transform.middle_name;
-$.age.text = transform.age;
+$.birthday.text = transform.birthday;
+
+var moment = require("alloy/moment");
+$.age.text = moment(transform.birthday, "YYYY/MM/DD").fromNow(true);
+
+//$.age.text = transform.age;
 $.sex.text = transform.sex;
 $.employment_status.text = transform.employment_status;
 $.address.text = transform.address;
