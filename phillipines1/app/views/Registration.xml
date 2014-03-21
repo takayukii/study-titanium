@@ -1,94 +1,26 @@
 <Alloy>
 	<Window id="registrationWindow" title="Registration" tabBarHidden="true" backgroundColor="#4682B4">
 		<ScrollView id="registrationWrap" layout="vertical" onClick="blurTextField">
+			<Label class="big_title">Paki fill apan lang po LAHAT NG BLANKO ng ganitong marka “*”</Label>
 			<Label class="big_title">Name</Label>
-			<Label class="small_title">First</Label>
+			<Label class="small_title">First *</Label>
 			<TextField id="first_name" />
-			<Label class="small_title">Last</Label>
+			<Label class="small_title">Last *</Label>
 			<TextField id="last_name" />
-			<Label class="small_title">Middle</Label>
+			<Label class="small_title">Middle *</Label>
 			<TextField id="middle_name" />
 			<Label class="big_title2">Birthday</Label>
 			<Picker id="birthday" onChange="setBirthday" />
-			<!--<Label class="big_title2">Age</Label>
-			<Picker id="age">
-				<PickerColumn id="column1">
-					<PickerRow title="15" color="#4682B4"/>
-					<PickerRow title="16"/>
-					<PickerRow title="17"/>
-					<PickerRow title="18"/>
-					<PickerRow title="19"/>
-					<PickerRow title="20"/>
-					<PickerRow title="21"/>
-					<PickerRow title="22"/>
-					<PickerRow title="23"/>
-					<PickerRow title="24"/>
-					<PickerRow title="25"/>
-					<PickerRow title="26"/>
-					<PickerRow title="27"/>
-					<PickerRow title="28"/>
-					<PickerRow title="29"/>
-					<PickerRow title="30"/>
-					<PickerRow title="31"/>
-					<PickerRow title="32"/>
-					<PickerRow title="33"/>
-					<PickerRow title="34"/>
-					<PickerRow title="35"/>
-					<PickerRow title="36"/>
-					<PickerRow title="37"/>
-					<PickerRow title="38"/>
-					<PickerRow title="39"/>
-					<PickerRow title="40"/>
-					<PickerRow title="41"/>
-					<PickerRow title="42"/>
-					<PickerRow title="43"/>
-					<PickerRow title="44"/>
-					<PickerRow title="45"/>
-					<PickerRow title="46"/>
-					<PickerRow title="47"/>
-					<PickerRow title="48"/>
-					<PickerRow title="49"/>
-					<PickerRow title="50"/>
-					<PickerRow title="51"/>
-					<PickerRow title="52"/>
-					<PickerRow title="53"/>
-					<PickerRow title="54"/>
-					<PickerRow title="55"/>
-					<PickerRow title="56"/>
-					<PickerRow title="57"/>
-					<PickerRow title="58"/>
-					<PickerRow title="59"/>
-					<PickerRow title="60"/>
-					<PickerRow title="61"/>
-					<PickerRow title="62"/>
-					<PickerRow title="63"/>
-					<PickerRow title="64"/>
-					<PickerRow title="65"/>
-					<PickerRow title="66"/>
-					<PickerRow title="67"/>
-					<PickerRow title="68"/>
-					<PickerRow title="69"/>
-					<PickerRow title="70"/>
-					<PickerRow title="71"/>
-					<PickerRow title="72"/>
-					<PickerRow title="73"/>
-					<PickerRow title="74"/>
-					<PickerRow title="75"/>
-					<PickerRow title="76"/>
-					<PickerRow title="77"/>
-					<PickerRow title="78"/>
-					<PickerRow title="79"/>
-					<PickerRow title="80"/>
-				</PickerColumn>
-			</Picker>-->
 			<Label class="big_title2">Sex</Label>
+			</Picker>
+			<Label class="big_title2">Sex *</Label>
 			<Picker id="sex">
 				<PickerColumn id="column1">
 					<PickerRow title="Male" />
 					<PickerRow title="Female" />
 				</PickerColumn>
 			</Picker>
-			<Label class="big_title2">Employment Status</Label>
+			<Label class="big_title2">Employment Status *</Label>
 			<Picker id="employment_status">
 				<PickerColumn id="column1">
 					<PickerRow title="Employed"/>
@@ -96,12 +28,12 @@
 					<PickerRow title="Self-employed"/>
 				</PickerColumn>
 			</Picker>
-			<Label class="big_title2">Address</Label>
+			<Label class="big_title2">Address *</Label>
 			<TextField id="address" />
-			<Label class="big_title2">Mobile Phone Number</Label>
+			<Label class="big_title2">Mobile Phone Number *</Label>
 			<TextField id="mobile_phone_number" />
 			<Label class="big_title">Education Attainment</Label>
-			<Label class="small_title">Level</Label>
+			<Label class="small_title">Level *</Label>
 			<Picker id="level">
 				<PickerColumn id="column1">
 					<PickerRow title="High School Grad."/>
