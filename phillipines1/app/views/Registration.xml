@@ -9,10 +9,8 @@
 			<TextField id="last_name" />
 			<Label class="small_title">Middle *</Label>
 			<TextField id="middle_name" />
-			<Label class="big_title2">Birthday</Label>
+			<Label class="big_title2">Birthday *</Label>
 			<Picker id="birthday" onChange="setBirthday" />
-			<Label class="big_title2">Sex</Label>
-			</Picker>
 			<Label class="big_title2">Sex *</Label>
 			<Picker id="sex">
 				<PickerColumn id="column1">
