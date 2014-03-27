@@ -80,13 +80,13 @@ function convertTocsv(candidates) {
     	if(counter == 0){
 	    	for(key in json){
 	    		//console.log("key: " + key);
-	    		csv += key + ",";
+	    		csv += '"' + key + '",';
 	    	}
 	    	csv += "\r\n";
    		}
    		for(key in json){
     		//console.log("val: " + json[key]);
-    		csv += json[key] + ",";
+    		csv += '"' + json[key] + '",';
     	}
     	csv += "\r\n";
     	counter ++;

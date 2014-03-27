@@ -1,6 +1,7 @@
 <Alloy>
-	<Window id="detailWindow" title="Detail" tabBarHidden="true">
+	<Window id="detailWindow" title="Confirmation" tabBarHidden="true">
 		<ScrollView id="detailWrap" layout="vertical">
+			<Label>Check details and press "save" button below if it's Okay. If you notice any typo, you can back to the registration page using back button.</Label>
 			<Label>Name</Label>
 			<Label>First</Label>
 			<Label class="label_val" id="first_name" />
